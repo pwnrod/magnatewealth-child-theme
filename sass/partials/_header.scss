@@ -2,7 +2,7 @@
 
 body{
     #header {
-        background-color: black;
+        background-color: white;
         box-shadow: 0 -2px 17px -2px #000000;
         #header_main {
             border: none;
@@ -13,6 +13,10 @@ body{
                     align-items: center;
                 }
             }
+        }
+
+        .header_bg {
+            background-color: white;
         }
     }
 }
@@ -39,7 +43,7 @@ body{
                 li{
                     border: none;
                    a {
-                       color: $white-color;
+                       color: $black-color;
                        font-size: 18px;
                        font-weight: 400;
                        @media all and(max-width: 960px) {
@@ -48,7 +52,7 @@ body{
                        }
                    }
                     a:hover{
-                        color: $white-color!important;
+                        color: $light-black !important;
                     }
                 }
             }
