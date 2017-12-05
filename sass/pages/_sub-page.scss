@@ -1,0 +1,126 @@
+
+
+body{
+
+    .breadcrumb{
+        color: $black-color!important;
+
+        a {
+            color: $black-color!important;
+        }
+    }
+    .sub-page-content{
+        max-width: 1800px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        h1{
+            text-transform: uppercase;
+            font-size: 40px;
+            font-weight: 100;
+            color: $black-color;
+            @media all and(max-width: 767px) {
+                font-size: 23px;
+            }
+        }
+        h3{
+            color: $light-blue-color;
+        }
+        .avia-button{
+            @include Transparent-button;
+        }
+    }
+    .subpage-side-bar {
+        background-size: 80% 85% !important;
+
+        .flex_cell_inner {
+            width: 80%;
+            margin: 0 auto;
+            h2{
+                color: $white-color;
+                @media all and (max-width: 767px){
+                    font-size: 25px;
+                }
+            }
+            .flex_column {
+                min-height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .avia-button-wrap{
+                    margin-top: 35%;
+                    @media all and (max-width: 767px){
+                        margin-top: 0;
+                    }
+                    .avia-button {
+                        @include Sidebar-button;
+
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
+
+.parent-slug-education-center {
+    .av-blog-meta-author-disabled {
+        article {
+            display: flex;
+            .blog-meta {
+                width: 150px !important;
+                margin-left: 0 !important;
+                margin-right: 100px !important;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    background: transparent;
+                    img {
+                        width: 150px;
+                        height: 150px;
+
+                    }
+                }
+            }
+            .post-title {
+                text-align: left !important;
+            }
+            .post-meta-infos {
+                display: none;
+            }
+            .entry-content-wrapper{
+                margin-left: 0!important;
+            }
+        }
+    }
+}
+
+
+.single-post{
+    .post-meta-infos{
+        display: none!important;
+    }
+    .blog-meta{
+        display: none;
+    }
+}
+.page_nameblog{
+    .post-entry {
+        .blog-meta{
+            display: none;
+        }
+        .post_author_timeline{
+            display: none;
+        }
+        .post-meta-infos{
+            display: none;
+        }
+    }
+}
+
+
+
+
+

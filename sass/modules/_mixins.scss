@@ -1,0 +1,27 @@
+
+@mixin Transparent-button{
+    background: transparent;
+    color: $light-blue-color!important;
+    border: 2px solid $light-blue-color!important;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    &:hover {
+        background: $light-blue-color;
+        span{
+            color: $white-color!important;
+        }
+    }
+}
+
+@mixin Sidebar-button{
+    background: $light-blue-color !important;
+    color: $white-color !important;
+    border: 1px solid $light-blue-color!important;
+    font-size: 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    @media all and(max-width: 767px) {
+        font-size: 20px!important;
+    }
+}

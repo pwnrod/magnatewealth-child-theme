@@ -1,0 +1,130 @@
+
+
+body{
+    #header {
+        background-color: black;
+        box-shadow: 0 -2px 17px -2px #000000;
+        #header_main {
+            border: none;
+
+            .logo {
+                a {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+body{
+    #header_meta{
+        @media all and (min-width: 960px) and (max-width: 1920px) {
+            position: absolute;
+            right: 2%;
+            top: 30%;
+            background: transparent;
+            border-bottom: 0;
+        }
+        .container{
+            display: flex;
+            @media all and(max-width: 960px) {
+                justify-content: center;
+            }
+            @media all and(max-width: 767px) {
+                flex-direction: column;
+            }
+            .sub_menu{
+                padding-right: 10px;
+                li{
+                    border: none;
+                   a {
+                       color: $white-color;
+                       font-size: 18px;
+                       font-weight: 400;
+                       @media all and(max-width: 960px) {
+                           font-size: 15px;
+                           color: $black-color!important;
+                       }
+                   }
+                    a:hover{
+                        color: $white-color!important;
+                    }
+                }
+            }
+            .phone-info {
+                span{
+                    border-left: 1px solid $light-blue-color;
+                    padding-left: 10px;
+                    color: $light-blue-color;
+                    font-size: 18px;
+                    @media all and(max-width: 960px) {
+                        font-size: 16px;
+                    }
+                }
+                @media all and(max-width: 960px) {
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}
+
+body{
+    #header_main_alternate {
+        background: white;
+        .main_menu {
+            #avia-menu {
+                display: flex;
+                justify-content: center;
+                li{
+
+                   >a {
+                        .avia-menu-text {
+                            color: $light-black;
+                            font-size: 18px;
+                            @media all and(max-width: 995px) {
+                                font-size: 14px;
+                            }
+                        }
+                        .avia-menu-fx {
+                            bottom: -1px;
+                            height: 52px;
+                            z-index: -1;
+                            background-color: #343434;
+                        }
+                       @media all and(max-width: 800px ) {
+                           padding: 0 7px;
+                       }
+
+                   }
+                    .sub-menu >li{
+                        :hover{
+                            background-color: #343434;
+                        }
+                        a span.avia-menu-text{
+                            color: black!important;
+
+                        }
+
+                        &:hover .avia-menu-text{
+                            color: $white-color!important;
+                        }
+
+                    }
+                    &:hover{
+                        .avia-menu-text {
+                            color: $white-color!important;
+                        }
+                    }
+                }
+                .current-menu-item{
+
+                    .avia-menu-text {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}

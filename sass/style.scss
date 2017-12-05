@@ -1,0 +1,18 @@
+/*
+Theme Name: Enfold Child
+Template: enfold
+Description:
+Author: Biven Toma
+License: Themeforest Split Licence
+License URI: -
+Theme URI: www.kriesi.at/themes/enfold/
+*/
+
+
+/*---------------------------------------------------------*/
+
+@import "bootstrapper";
+
+#header {
+      z-index: 9000 !important; // fix elements showing overtop the header
+}
